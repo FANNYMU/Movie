@@ -1,0 +1,156 @@
+*,html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    background-color: #171717;
+    
+}
+
+
+.logo {
+    margin-top: 2em; /* Use em for margin based on font size */
+    padding-left: 10vw; /* Use vw for padding based on viewport width */
+    display: flex;
+    padding-left: 100px;
+    color: #f7f7f7;
+  }
+
+.logo h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.logo h1 a{
+    color: #ffdd00;
+}
+
+.ull {
+    padding-left: 1250px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    gap: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ull li a{
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.h22 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.h22 h2 {
+    color: #f7f7f7;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    color: #f7f7f7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 40px;
+    font-size: 30px;
+    position: relative;
+}
+
+.card-content img {
+    max-width: 100%; /* agar gambar tidak melebihi batas maksimum kontainer */
+    border-radius: 20px; /* mengatur border-radius */
+}
+
+.card-content {
+    max-width: 200px;
+    margin-left: 65px;
+    padding-top: 100px;
+}
+
+.card-desc {
+    color: #f7f7f7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.card {
+    display: flex;
+}
+
+.card-content:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#alertBox {
+    display: none; /* Initially hidden */
+    position: fixed; /* Stay on top of the page */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the box */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 10; /* Ensure it's on top of other elements */
+  }
+  
+  #alertImage {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .alert {
+    border: none;
+    color: #e7cc23;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large;
+  }
+
+
+.btn {
+    color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 10px;
+}
+  
+.logo ul span {
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+      padding-left: 50px; /* Adjust padding for smaller screens */
+    }
+    .ull {
+      padding-left: 20px; /* Adjust padding for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px;  /* Adjust gap for better spacing */
+    }
+    .card-content {
+    max-width: 30vw; /* Use vw for card width based on viewport width */
+      margin-left: 20px; /* Adjust margin for better layout */
+    }
+    /* Add more styles for smaller screens as needed */
+  }
